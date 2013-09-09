@@ -1,6 +1,6 @@
 {
   "name": "space-vec3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "3d space class based on the vec3 package.",
   "main": "index.js",
   "keywords": [
@@ -11,6 +11,10 @@
   "author": {
     "name": "Leonardo Santos",
     "email" : "leonardo.olsantos@gmail.com"
+  },
+  "repository": {
+     "type" : "git",
+     "url" : "https://github.com/leonardosantos/space-vec3"
   },
   "license": "BSD",
   "dependencies": {

@@ -1,4 +1,18 @@
+module.exports = s;
+
 var vec3 = require("vec3");
+s.vec3 = vec3;
+s.Space = Space;
+
+function s(arg1, arg2){
+    if(Array.isArray(arg1))
+        return Space.parse(arg1);
+    else if (typeof(arg1) == "object" && typeof(arg1.x) != "undefined" &&
+             typeof(arg1.y) != "undefined"  && typeof(arg1.z) != "undefined")
+        return new Space(arg1, arg2);
+    else
+        throw new Error("First argument must be either a 3d Array matrix or a vec3.");
+}
 
 function if_undefined(current_value, default_value){
     if (typeof(current_value) == "undefined")
@@ -84,6 +98,7 @@ Space.parse.fromXYZ = function(matrix){
     }
     return Space.parse(result);
 };
+
 Space.identity = function(size, element0, element1){
     element0 = if_undefined(element0, 0);
     element1 = if_undefined(element1, 1);
@@ -93,5 +108,3 @@ Space.identity = function(size, element0, element1){
         space.matrix[i][i][i] = element1;
     return space;
 };
-
-module.exports = {"Space": Space};
