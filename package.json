@@ -1,0 +1,19 @@
+{
+  "name": "space-vec3",
+  "version": "0.0.1",
+  "description": "3d space class based on the vec3 package.",
+  "main": "index.js",
+  "keywords": [
+    "space",
+    "vector",
+    "point"
+  ],
+  "author": {
+    "name": "Leonardo Santos",
+    "email" : "leonardo.olsantos@gmail.com"
+  },
+  "license": "BSD",
+  "dependencies": {
+    "vec3": ">=0.1.3"
+  }
+}
