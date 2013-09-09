@@ -1,6 +1,6 @@
 # space-vec3
 
-A 3d space class based on the [vec3](https://npmjs.org/package/vec3) package. Space instances will contain a vec3 **dimensions** field, and a Array of Arrays of Arrays **matrix** 
+A 3d space class based on the [vec3](https://npmjs.org/package/vec3) package. Space instances will contain a vec3 **dimensions** field, and a Array of Arrays of Arrays **matrix**.
 
 ## Installation
 
@@ -30,4 +30,4 @@ The space matrices are stored as in the YZX convention. They are not in the XYZ 
 
 Use the **Space.get(vec3)** and **Space.set(vec3, value)** instead of accessing a space matrix directly (unless you know what you are doing).
 
-To convert between YZX and XYZ formats use the **Space.toXYZ()** and **Space.parse.fromXYZ(matrix)**
+To convert between YZX and XYZ formats use the **Space.toXYZ()** and **Space.parse.fromXYZ(matrix)**.
