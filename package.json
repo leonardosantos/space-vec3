@@ -1,6 +1,6 @@
 {
   "name": "space-vec3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "3d space class based on the vec3 package.",
   "main": "index.js",
   "keywords": [
