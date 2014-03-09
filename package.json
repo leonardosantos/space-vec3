@@ -16,7 +16,7 @@
      "type" : "git",
      "url" : "https://github.com/leonardosantos/space-vec3"
   },
-  "license": "BSD",
+  "license": "MIT",
   "dependencies": {
     "vec3": ">=0.1.3"
   }
